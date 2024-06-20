@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <header class="header container-fluid d-none d-lg-block"> <!-- Va a tomar todo el ancho disponible-->
+
+        <!-- Disposicion-->
+        <div class="d-flex justify-content-between align-items-center p-3 shadow-sm"><!-- Alineamos a lo largo de la barra-->
+            
+            <!-- Logo -->
+            <p class="fs-3 fw-bold m-0 me-4"><span class="text-success">U</span>demy </p>
+        
+            <!--Search-->
+            <form class="flex-grow-1"> <!-- El buscador va a tomar todo el espacio disponible-->
+                <input
+                    type="search"
+                    class="form-control bg-light"
+                    placeholder="Busca cualquier cosa"
+                />
+            </form> 
+            
+            <!-- Primera Navegacion-->
+            <nav class="d-flex">
+                <a href="#" class="enlace nav-link">Udemy For Business</a>
+                <a href="#" class="enlace nav-link">Enseña en Udemy</a>
+            </nav>
+
+            <!-- Segunda Navegacion-->
+            <nav >
+                <a href="#" class="btn btn-outline-dark">Iniciar Sesion</a>
+                <a href="#" class="btn btn-dark">Registrate</a>
+
+            </nav>
+        
+        </div>
+
+    </header>
+
+    <!-- Descuentos -->
+    <section class="descuentos container-xl">
+
+        <div class="row justify-content-around align-items-lg-end bg-light">
+
+            <div class="texto-descuentos col-lg-4 shadow bg-white"> <!-- Descripcion-->
+
+                <div class="p-3">
+                    <h2>Último día para disfrutar descuentos</h2>
+                    <p class="descripcion">Cursos desde 10 dolares. Utiliza el cupón para pagar únicamente 10$ en cualquier curso.</p>
+                
+                    <input 
+                        placeholder="¿Qué quieres aprender?"
+                        type="search"
+                        class="buscar form-control  bg-light"
+                    />                
+                
+                </div>
+
+            </div>
+
+            <div class="col-lg-5"> <!-- Imagen -->
+                <img class="img-fluid" src="build/img/persona1.png" alt="Persona1">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cursos -->
+    <section class="cursos container-xl mt-5 pt-5">
+
+        <h3>Una amplia seleccion de cursos</h3>
+        <p class="fs-4">
+            Elige entre mas de 155,000 cursos en video y 
+            en linea con nuevo contenido cada mes
+        </p>
+
+        <!-- Navegacion Cursos-->
+        <nav class="nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">JavaScript</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">Python</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">React Native</a>
+            </li>
+
+        </nav>
+
+        <!-- Cards de los Cursos-->
+        <div class="categoria-curso p-4 mt-3">
+
+            <p class="fs-4 fw-bold">Amplia tus oportunidades con Javascript y Front End</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dicta voluptatum quam impedit 
+                recusandae minus nemo, vitae corporis rem alias, asperiores sed fuga! Sint dolorum omnis molestiae rerum 
+                numquam dolorem?
+            </p>
+
+            <a href="#" class="btn btn-outline-dark mb-5">Explorar Javascript</a>
+
+            <!-- Cursos JS -->
+            <ul class="list-unstyled listado-cursos">
+
+                <!-- Card 1 -->
+                <li class="curso">
+
+                    <div class="card">
+                        <img 
+                            class="card-img-top"
+                            src="build/img/curso_6.jpg"
+                            alt="imagen curso"
+                        />
+
+                        <div class="card-body">
+
+                            <h4 class="titulo">Curso de JavaScript Moderno creando 15 proyectos</h4>
+                            <p class="instructor">Jose Pedro Instructor</p>
+                        
+                            <!-- Informacion del Curso-->
+                            <div class="d-flex align-items-center"> <!-- Calificacion - Estrellas -->
+                                <p class="puntaje fw-bold text-secondary m-0 me-2">
+                                    4.7
+                                </p>
+
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="calificacion estrellas">
+                                
+                                <p class="total m-0">(3121)</p>
+
+                            </div>
+
+                            <div class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></div>
+
+                        </div>
+
+
+                    </div>
+                </li>
+
+
+                <!-- Card 2 -->
+                <li class="curso">
+
+                    <div class="card">
+                        <img 
+                            class="card-img-top"
+                            src="build/img/curso_2.jpg"
+                            alt="imagen curso"
+                        />
+
+                        <div class="card-body">
+
+                            <h4 class="titulo">Diseño de UX y UI con Figma - 5 Apps</h4>
+                            <p class="instructor">Jose Pedro Instructor</p>
+                        
+                            <!-- Informacion del Curso-->
+                            <div class="d-flex align-items-center"> <!-- Calificacion - Estrellas -->
+                                <p class="puntaje fw-bold text-secondary m-0 me-2">
+                                    4.7
+                                </p>
+
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="calificacion estrellas">
+                                
+                                <p class="total m-0">(3121)</p>
+
+                            </div>
+
+                            <div class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></div>
+
+                        </div>
+
+
+                    </div>
+                </li>
+
+                <!-- Card 3 -->
+                <li class="curso">
+
+                    <div class="card">
+                        <img 
+                            class="card-img-top"
+                            src="build/img/curso_10.jpg"
+                            alt="imagen curso"
+                        />
+
+                        <div class="card-body">
+
+                            <h4 class="titulo">FullStack JavaScript - Node, React y Electron</h4>
+                            <p class="instructor">Jose Pedro Instructor</p>
+                        
+                            <!-- Informacion del Curso-->
+                            <div class="d-flex align-items-center"> <!-- Calificacion - Estrellas -->
+                                <p class="puntaje fw-bold text-secondary m-0 me-2">
+                                    4.7
+                                </p>
+
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="calificacion estrellas">
+                                
+                                <p class="total m-0">(3121)</p>
+
+                            </div>
+
+                            <div class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></div>
+
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Card 4 -->
+                <li class="curso">
+
+                    <div class="card">
+                        <img 
+                            class="card-img-top"
+                            src="build/img/curso_9.jpg"
+                            alt="imagen curso"
+                        />
+
+                        <div class="card-body">
+
+                            <h4 class="titulo">Desarrollo Web Completo con React y Django</h4>
+                            <p class="instructor">Jose Pedro Instructor</p>
+                        
+                            <!-- Informacion del Curso-->
+                            <div class="d-flex align-items-center"> <!-- Calificacion - Estrellas -->
+                                <p class="puntaje fw-bold text-secondary m-0 me-2">
+                                    4.7
+                                </p>
+
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="calificacion estrellas">
+                                
+                                <p class="total m-0">(3121)</p>
+
+                            </div>
+
+                            <div class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></div>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <!-- Card 5 -->
+                <li class="curso">
+
+                    <div class="card">
+                        <img 
+                            class="card-img-top"
+                            src="build/img/curso_3.jpg"
+                            alt="imagen curso"
+                        />
+
+                        <div class="card-body">
+
+                            <h4 class="titulo">Diseño de Interfaces de Usuario para Apps Moviles</h4>
+                            <p class="instructor">Jose Pedro Instructor</p>
+                        
+                            <!-- Informacion del Curso-->
+                            <div class="d-flex align-items-center"> <!-- Calificacion - Estrellas -->
+                                <p class="puntaje fw-bold text-secondary m-0 me-2">
+                                    4.7
+                                </p>
+
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="calificacion estrellas">
+                                
+                                <p class="total m-0">(3121)</p>
+
+                            </div>
+
+                            <div class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></div>
+
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Card 6 - Oculto -->
+                <li class="curso d-lg-none">
+
+                    <div class="card">
+                        <img 
+                            class="card-img-top"
+                            src="build/img/curso_12.jpg"
+                            alt="imagen curso"
+                        />
+
+                        <div class="card-body">
+
+                            <h4 class="titulo">Bootcamp Backed - Ruby on Rails, Django y Laravel</h4>
+                            <p class="instructor">Jose Pedro Instructor</p>
+                        
+                            <!-- Informacion del Curso-->
+                            <div class="d-flex align-items-center"> <!-- Calificacion - Estrellas -->
+                                <p class="puntaje fw-bold text-secondary m-0 me-2">
+                                    4.7
+                                </p>
+
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="calificacion estrellas">
+                                
+                                <p class="total m-0">(3121)</p>
+
+                            </div>
+
+                            <div class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></div>
+
+                        </div>
+
+
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- Beneficios - Cursos-->
+    <section class="bg-light my-5 py-5"><!-- Toma todo el espacio disponible -->
+
+        <div class="container-xl">
+
+            <div class="row justify-content-between align-items-center">
+
+                <!-- 1er Beneficio-->
+                <div class="col-md-3 mb-5 mb-md-0"><!-- Dejamops una Columna de 3 vacia esta va hacer la de separacion-->
+                    <div class="d-flex justify-content-around align-items-center">
+
+                        <div class="me-3 "><!-- Icono-->
+                            <div class="icono">
+                                <i class="bi bi-play-fill fs-3"></i>
+                            </div>
+                        </div>
+
+                        <p class="fw-bold m-0"><!--Texto-->
+                            Aprende habilidades a tu ritmo con mas de 150 000 cursos en video.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- 2do Beneficio-->
+                <div class="col-md-3 mb-5 mb-md-0"><!-- Dejamops una Columna de 3 vacia esta va hacer la de separacion-->
+                    <div class="d-flex justify-content-around align-items-center">
+
+                        <div class="me-3 "><!-- Icono-->
+                            <div class="icono">
+                                <i class="bi bi-star-fill fs-3"></i>
+                            </div>
+                        </div>
+
+                        <p class="fw-bold m-0"><!--Texto-->
+                            Compra cursos impartidos por expertos del mundo real y obten un empleo.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- 3er Beneficio-->
+                <div class="col-md-3 mb-5 mb-md-0"><!-- Dejamops una Columna de 3 vacia esta va hacer la de separacion-->
+                    <div class="d-flex justify-content-around align-items-center">
+
+                        <div class="me-3 "><!-- Icono-->
+                            <div class="icono">
+                                <i class="bi bi-phone-fill fs-3"></i>
+                            </div>
+                        </div>
+
+                        <p class="fw-bold m-0"><!--Texto-->
+                            Aprende a tu ritmo, con acceso de por vida desde ordenadores o dispositivos moviles
+                        </p>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Cursos mas Vistos-->
+    <main class="container-xl">
+        <p class="fw-bold fs-4">Los Estudiantes estan viendo</p>
+
+            <!-- Cursos JS -->
+            <ul class="list-unstyled listado-cursos">
+
+                <!-- Card 1 -->
+                <li class="curso">
+
+                    <div class="card">
+                        <img 
+                            class="card-img-top"
+                            src="build/img/curso_1.jpg"
+                            alt="imagen curso"
+                        />
+
+                        <div class="card-body">
+
+                            <h4 class="titulo">Curso de Guitarra - Principios Basicos</h4>
+                            <p class="instructor">Jose Pedro Instructor</p>
+                        
+                            <!-- Informacion del Curso-->
+                            <div class="d-flex align-items-center"> <!-- Calificacion - Estrellas -->
+                                <p class="puntaje fw-bold text-secondary m-0 me-2">
+                                    4.7
+                                </p>
+
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="calificacion estrellas">
+                                
+                                <p class="total m-0">(3121)</p>
+
+                            </div>
+
+                            <div class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></div>
+
+                        </div>
+
+
+                    </div>
+                </li>
+
+
+                <!-- Card 2 -->
+                <li class="curso">
+
+                    <div class="card">
+                        <img 
+                            class="card-img-top"
+                            src="build/img/curso_4.jpg"
+                            alt="imagen curso"
+                        />
+
+                        <div class="card-body">
+
+                            <h4 class="titulo">Fotografia para Principiantes - Camara y Equipo Necesario</h4>
+                            <p class="instructor">Jose Pedro Instructor</p>
+                        
+                            <!-- Informacion del Curso-->
+                            <div class="d-flex align-items-center"> <!-- Calificacion - Estrellas -->
+                                <p class="puntaje fw-bold text-secondary m-0 me-2">
+                                    4.7
+                                </p>
+
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="calificacion estrellas">
+                                
+                                <p class="total m-0">(3121)</p>
+
+                            </div>
+
+                            <div class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></div>
+
+                        </div>
+
+
+                    </div>
+                </li>
+
+                <!-- Card 3 -->
+                <li class="curso">
+
+                    <div class="card">
+                        <img 
+                            class="card-img-top"
+                            src="build/img/curso_5.jpg"
+                            alt="imagen curso"
+                        />
+
+                        <div class="card-body">
+
+                            <h4 class="titulo">Curso de Ventas por Internet e Instagram</h4>
+                            <p class="instructor">Jose Pedro Instructor</p>
+                        
+                            <!-- Informacion del Curso-->
+                            <div class="d-flex align-items-center"> <!-- Calificacion - Estrellas -->
+                                <p class="puntaje fw-bold text-secondary m-0 me-2">
+                                    4.7
+                                </p>
+
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="calificacion estrellas">
+                                
+                                <p class="total m-0">(3121)</p>
+
+                            </div>
+
+                            <div class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></div>
+
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Card 4 -->
+                <li class="curso">
+
+                    <div class="card">
+                        <img 
+                            class="card-img-top"
+                            src="build/img/curso_7.jpg"
+                            alt="imagen curso"
+                        />
+
+                        <div class="card-body">
+
+                            <h4 class="titulo">Fundamentos Basicos de Diseño de UX y UI</h4>
+                            <p class="instructor">Jose Pedro Instructor</p>
+                        
+                            <!-- Informacion del Curso-->
+                            <div class="d-flex align-items-center"> <!-- Calificacion - Estrellas -->
+                                <p class="puntaje fw-bold text-secondary m-0 me-2">
+                                    4.7
+                                </p>
+
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="calificacion estrellas">
+                                
+                                <p class="total m-0">(3121)</p>
+
+                            </div>
+
+                            <div class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></div>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <!-- Card 5 -->
+                <li class="curso">
+
+                    <div class="card">
+                        <img 
+                            class="card-img-top"
+                            src="build/img/curso_8.jpg"
+                            alt="imagen curso"
+                        />
+
+                        <div class="card-body">
+
+                            <h4 class="titulo">Diseño de Tiendas Virtuales con WooCommerce</h4>
+                            <p class="instructor">Jose Pedro Instructor</p>
+                        
+                            <!-- Informacion del Curso-->
+                            <div class="d-flex align-items-center"> <!-- Calificacion - Estrellas -->
+                                <p class="puntaje fw-bold text-secondary m-0 me-2">
+                                    4.7
+                                </p>
+
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="calificacion estrellas">
+                                
+                                <p class="total m-0">(3121)</p>
+
+                            </div>
+
+                            <div class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></div>
+
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Card 6 - Oculto -->
+                <li class="curso d-lg-none">
+
+                    <div class="card">
+                        <img 
+                            class="card-img-top"
+                            src="build/img/curso_12.jpg"
+                            alt="imagen curso"
+                        />
+
+                        <div class="card-body">
+
+                            <h4 class="titulo">Bootcamp Backed - Ruby on Rails, Django y Laravel</h4>
+                            <p class="instructor">Jose Pedro Instructor</p>
+                        
+                            <!-- Informacion del Curso-->
+                            <div class="d-flex align-items-center"> <!-- Calificacion - Estrellas -->
+                                <p class="puntaje fw-bold text-secondary m-0 me-2">
+                                    4.7
+                                </p>
+
+                                <img class="me-2 calificacion" src="build/img/estrellas.png" alt="calificacion estrellas">
+                                
+                                <p class="total m-0">(3121)</p>
+
+                            </div>
+
+                            <div class="precio fw-bold">10 USD$ <span class="original fw-normal">200 USD$</span></div>
+
+                        </div>
+
+
+                    </div>
+                </li>
+            </ul>
+
+    </main>
+
+    <!--  Categorias - Cursos -->
+    <section class="container-xl categorias mt-3">
+        <p class="fs-4 fw-bold">Categorias Principales</p>
+
+        <ul class="list-unstyled grid">
+
+            <!-- Primera Categoria-->
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img class="img-fluid" src="build/img/iconos-01.png" alt="Imagen icono">
+                    </div>
+                    <p class="fw-bold mt-2">Diseño</p>
+                </a>
+            </li>
+
+            <!-- Segunda Categoria-->
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img class="img-fluid" src="build/img/iconos-02.png" alt="Imagen icono">
+                    </div>
+                    <p class="fw-bold mt-2">Desarrollo</p>
+                </a>
+            </li>
+
+            <!-- Tercer Categoria-->
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img class="img-fluid" src="build/img/iconos-03.png" alt="Imagen icono">
+                    </div>
+                    <p class="fw-bold mt-2">Marketing</p>
+                </a>
+            </li>
+
+            <!-- Cuarta Categoria-->
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img class="img-fluid" src="build/img/iconos-04.png" alt="Imagen icono">
+                    </div>
+                    <p class="fw-bold mt-2">Informatica y Software</p>
+                </a>
+            </li>
+
+            <!-- Quinta Categoria-->
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img class="img-fluid" src="build/img/iconos-05.png" alt="Imagen icono">
+                    </div>
+                    <p class="fw-bold mt-2">Desarrollo Personal</p>
+                </a>
+            </li>
+
+            <!-- Sexta Categoria-->
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img class="img-fluid" src="build/img/iconos-06.png" alt="Imagen icono">
+                    </div>
+                    <p class="fw-bold mt-2">Negocios</p>
+                </a>
+            </li>
+
+            <!-- Septima Categoria-->
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img class="img-fluid" src="build/img/iconos-07.png" alt="Imagen icono">
+                    </div>
+                    <p class="fw-bold mt-2">Fotografia</p>
+                </a>
+            </li>
+
+            <!-- Octava Categoria-->
+            <li class="g-col-6 g-col-md-4 g-col-lg-3">
+
+                <a href="#" class="text-decoration-none">
+                    <div class="bg-light">
+                        <img class="img-fluid" src="build/img/iconos-08.png" alt="Imagen icono">
+                    </div>
+                    <p class="fw-bold mt-2">Musica</p>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- Listado - Categorias-->
+    <section class="listado-categorias py-5 mt-5 bg-light">
+        <div class="container-xl">
+            <p class="fs-4 fw-bold">Temas por Categoria</p>
+
+            <!-- Listamos las Categorias -->
+            <div class="row">
+
+                <!-- Primera Categoria-->
+                <div class="col-12 col-sm-6 col-md-3">
+
+                    <p class="fw-bold fs-4">Desarrollo</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Python</a>
+                            <p>30 000 000 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Desarrollo Web</a>
+                            <p>10 000 000 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Aprendizaje Automatico</a>
+                            <p>6 000 000 Estudiantes</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Segunda Categoria-->
+                <div class="col-12 col-sm-6 col-md-3">
+
+                    <p class="fw-bold fs-4">Negocios</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Analisis Financiero</a>
+                            <p>1 000 000 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">SQL</a>
+                            <p>4 000 000 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">PMP</a>
+                            <p>1 000 000 Estudiantes</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Tercera Categoria-->
+                <div class="col-12 col-sm-6 col-md-3">
+
+                    <p class="fw-bold fs-4">Informatica y Software</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Certificacion AWS</a>
+                            <p>4 000 000 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Hacking Etico</a>
+                            <p>10 000 000 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Seguridad Informatica</a>
+                            <p>4 000 000 Estudiantes</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Cuarta Categoria-->
+                <div class="col-12 col-sm-6 col-md-3">
+
+                    <p class="fw-bold fs-4">Diseño</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Photoshop</a>
+                            <p>10 000 000 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Diseño Gráfico</a>
+                            <p>3 000 000 Estudiantes</p>
+                        </li>
+
+                        <li class="mb-4">
+                            <a class="text-success fw-bold fs-5" href="#">Dibujo</a>
+                            <p>2 000 000 Estudiantes</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <a href="#" class="btn btn-outline-dark">Explora mas Temas</a>
+
+        </div>
+
+    </section>
+
+    <!-- Tutores -->
+    <section class="container-xl py-3">
+
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 order-2 order-md-1">
+                <img class="img-fluid" src="build/img/persona2.png" alt="Instructor">
+            </div>
+
+            <div class="col-md-5 order-1 order-md-2">
+                <h2 class="fs-3">Convierte en Instructor</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae exercitationem ullam explicabo vel nesciunt non nobis enim nemo dolorem. Sequi eum veniam eius unde ab itaque cumque dolor sunt nesciunt.</p>
+                <a href="#" class="btn btn-dark">Empieza a enseñar hoy mismo</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Partners-->
+    <section class="bg-light py-5">
+
+        <div class="container-xl">
+
+            <div class="row justify-content-center">
+
+                <!-- Aqui agregamos todos los partners-->
+                <div class="col-md-8"><!-- Vamos a ocupar 8 de 12 espacios -->
+                    <h4 class="text-center">Empresas de todos los tamaños confian en nosotros</h4>
+                    
+                    <!--Logos de los partners-->
+                    <div class="logos">
+
+                        <div class="logo d-flex justify-content-center">
+                            <img src="build/img/logo-01.svg" alt="imagen-logo">
+                        </div>
+
+                        <div class="logo d-flex justify-content-center">
+                            <img src="build/img/logo-02.svg" alt="imagen-logo">
+                        </div>
+
+                        <div class="logo d-flex justify-content-center">
+                            <img src="build/img/logo-03.svg" alt="imagen-logo">
+                        </div>
+
+                        <div class="logo d-flex justify-content-center">
+                            <img src="build/img/logo-04.svg" alt="imagen-logo">
+                        </div>
+
+                        <div class="logo d-flex justify-content-center">
+                            <img src="build/img/logo-05.svg" alt="imagen-logo">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Udemy para Negocios-->
+    <section class="container-xl py-5">
+
+        <div class="row justify-content-center align-items-center">
+
+            <div class="col-md-5">
+                <h2 class="fs-3">Udemy <span class="text-success">Bussiness</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum asperiores velit assumenda corrupti molestiae, ad aliquid rerum nobis et, inventore maxime dolorem rem ut voluptatibus omnis illo corporis laboriosam ab!</p>
+                <a class="btn btn-dark" href="#">Consigue Udemy Bussiness</a>
+            </div>
+
+            <div class="col-md-5">
+                <img class="img-fluid" src="build/img/persona3.png" alt="Imagen Persona">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Transforma tu Vida con Udemy-->
+    <section class="container-xl py-5">
+
+        <div class="row justify-content-center align-items-center">
+
+
+            
+            <div class="col-md-5 mb-5 mb-md-0 order-md-2">
+                <h2 class="fs-3">Transforma tu vida mediante la educacion</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum asperiores velit assumenda corrupti molestiae, ad aliquid rerum nobis et, inventore maxime dolorem rem ut voluptatibus omnis illo corporis laboriosam ab!</p>
+                <a class="btn btn-dark" href="#">Descubre como</a>
+            </div>
+
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="build/img/transforma.png" alt="Imagen Persona">
+            </div>
+
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+     <footer class="bg-dark py-5">
+        <div class="container-xl">
+
+            <div class="row align-items-start">
+
+                <nav class="col-md-2 d-grid gap-2">
+                    <a href="#" class="text-light text-decoration-none">Udemy Bussiness</a>
+                    <a href="#" class="text-light text-decoration-none">Enseña en Udemy</a>
+                    <a href="#" class="text-light text-decoration-none">Consigue la App</a>
+                    <a href="#" class="text-light text-decoration-none">Quienes Somos</a>
+                    <a href="#" class="text-light text-decoration-none">Contacto</a>
+                </nav>
+
+                <nav class="col-md-2 d-grid gap-2 mt-4 mt-md-0">
+                    <a href="#" class="text-light text-decoration-none">Empleo</a>
+                    <a href="#" class="text-light text-decoration-none">Blog</a>
+                    <a href="#" class="text-light text-decoration-none">Ayuda y Asistencia</a>
+                    <a href="#" class="text-light text-decoration-none">Afiliado</a>
+                </nav>
+
+                <nav class="col-md-2 d-grid gap-2 me-auto mt-4 mt-md-0">
+                    <a href="#" class="text-light text-decoration-none">Condiciones</a>
+                    <a href="#" class="text-light text-decoration-none">Politica de Privacidad</a>
+                    <a href="#" class="text-light text-decoration-none">Mapa del Sitio</a>
+                </nav>
+
+                <div class="col-md-2 mt-5 mt-md-0">
+                    <a href="#" class="btn btn-outline-light">Español</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container-xl mt-5 d-flex justify-content-between align-items-center">
+            <p class="text-light fs-3 fw-bold"><span class="text-success">U</span>demy</p>
+            <p class="text-light">&copy Udemy.inc</p>
+        </div>
+
+     </footer>
+     
+    
+</body>
+
+
+</html>
